@@ -1,0 +1,69 @@
+samples:
+  # Sample sheets
+  all: samples.tsv
+  # meristem: meristem.tsv
+  # leaf: leaf.tsv
+  # Raw data path
+  path: "/work/jawlab/kivanc/PeanutRnaSeq/data/fastq"
+
+ref:
+  # Reference dir path
+  path: "/work/jawlab/kivanc/PeanutRnaSeq/reference"
+  # Reference genome
+  reference: "/work/jawlab/kivanc/PeanutRnaSeq/reference/arahy.Tifrunner.gnm1.KYV3.genome_main.fa"
+  # Reference gene models
+  annotation: "/work/jawlab/kivanc/PeanutRnaSeq/reference/arahy.Tifrunner.gnm1.ann1.CCJH.gene_models_main.gff3"
+  # Reference transcriptome
+  transcript: "/work/jawlab/kivanc/PeanutRnaSeq/reference/arahy.Tifrunner.gnm1.ann1.CCJH.transcript.fa"
+  
+  gtf:
+  # STAR genome index
+  star_index: "/work/jawlab/kivanc/PeanutRnaSeq/StarIndex"
+
+# rRNA sequences of reference genome
+rRNA: "/work/jawlab/kivanc/PeanutRnaSeq/rRNA/rrna.fa"
+# bbmap index path
+bb_index: "/work/jawlab/kivanc/PeanutRnaSeq/rRNA/bb_index"
+
+trimming:
+  # skip trimming: false or true
+  skip: false
+
+decontamination:
+  # skip rRNA decontamination: false or true
+  skip: false
+
+alignment:
+  # activate alignment: false or true
+  activate: true
+
+featurecounts:
+  # activate featureCounts: false or true
+  activate: false
+
+rsem:
+  # activate RSEM: false or true
+  activate: true
+  rsemindex: /scratch/ac32082/02.PeanutRNASeq/01.analysis/peanut_rna_seq_analysis/results/05_quantification/05a_rsem/rsem_index/tifrunner
+  genes: "/scratch/ac32082/02.PeanutRNASeq/01.analysis/peanut_rna_seq_analysis/results/05_quantification/05a_rsem/genes"
+
+htseq:
+  # activate HTSeq: false or true
+  activate: false
+
+alignment_free:
+  # activate alignment-free mode: false or true
+  activate: false
+
+kallisto:
+  # activate kallisto: false or true
+  activate: false
+
+salmon:
+  # activate salmon: false or true
+  activate: no
+  # activate salmon mapping_mode: false or true
+  mapping_mode: no
+  # activate salmon alignment_mode: false or true
+  alignment_mode: false
+

@@ -1,0 +1,9 @@
+name: qualimap
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - openjdk=10.0.2=h14c3975_1015
+  - qualimap=2.2.2a=1
+prefix: /home/ac32082/.conda/envs/qualimap
